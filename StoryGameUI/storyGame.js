@@ -1,9 +1,16 @@
+//To do
+//1. Check Data. Is this what we use?
+//2. Discuss Design. (Background/color/Arrow?)
+//3. Shared design part. (Switch our games/Contact...?)
+//4. Use callbacks when ending the game
+
 (function($){
   $(document).ready(function(){
+      var first_PageLoaded = true;
       if(sessionStorage.getItem("firstTrial")){
           var firstTrial = false;
-          var currentStress = sessionStorage.getItem("stress");
-          var currentStoryIndex = sessionStorage.getItem("index");
+          var currentStress = parseInt(sessionStorage.getItem("stress"));
+          var currentStoryIndex = parseInt(sessionStorage.getItem("index"));
           var stories = JSON.parse(sessionStorage.getItem("stories"));
       } else {
           console.log("First trial");
@@ -12,6 +19,7 @@
           var currentStoryIndex = 1;
       }
 
+      sessionStorage.setItem("firstTrial", false);
 
 //Use filereader API to read these stories from the story file?
       if(firstTrial){
@@ -39,9 +47,18 @@
           var options3 = [option3_1, option3_2, option3_3, option3_4];
           var story3 = new Story("A major conference for your research project is approaching. You are presenting your findings that you made last semester, and need to prepare. Though, the biggest paper of the semester is due right after you get back. Do you…",
                                    options3);
+          var option4_1 = new Option("Skip the meeting and go to the party. You’ve been actively engaged so far, and it won’t matter if you miss this one meeting.", 8);
+          var option4_2 = new Option("Tell your friend you’ll make it up to him later by buying him dinner, and explain the important meeting you have to attend.", -4);
+          var option4_3 = new Option("Work with your project group and try to reschedule for a later or earlier time.", 3);
+          var option4_4 = new Option("Skype in to the meeting so you can quickly make your points and go to the party afterwards.", 4);
+          var options4 = [option4_1, option4_2, option4_3, option4_4];
+          var story4 = new Story("A very close friend that you’ve known since high school is having his 21st birthday part, but you have an important checkpoint meeting for your semester volunteer project on the same day.",
+                            options4);
+
           stories[1] = story1;
           stories[2] = story2;
           stories[3] = story3;
+          stories[4] = story4;
 
           sessionStorage.setItem("stories", JSON.stringify(stories));
       }
@@ -54,9 +71,14 @@
 
 
       $('#sample_goal').goalProgress({
-          currentAmount: currentStress,}, firstTrial
+          currentAmount: currentStress,}, first_PageLoaded
       );
-      sessionStorage.setItem("firstTrial", false);
+      first_PageLoaded = false;
+
+      $('#restart').on("click", function(){
+          sessionStorage.clear();
+          location.reload();
+      });
 
       $('#option1').on("click", function(event){
           if(currentStress+stories[currentStoryIndex].options[0].point >= 0){

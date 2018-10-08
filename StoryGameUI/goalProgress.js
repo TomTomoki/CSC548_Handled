@@ -10,7 +10,7 @@
 	$.fn.extend({
 		goalProgress: function(options, first) {
 			var defaults = {
-				goalAmount: 200,
+				goalAmount: 100,
 				currentAmount: 0,
 				speed: 1000,
 				textBefore: '',

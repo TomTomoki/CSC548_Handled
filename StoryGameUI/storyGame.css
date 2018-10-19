@@ -1,83 +1,191 @@
-.goalProgress {
-	background: #f7f7f7;
-	padding: 5px;
-}
-div.progressBar {
-	background: #ff008c;
-	color: #fff;
-	font-size: 1.5em;
-	font-family: 'helvetica neue', helvetica, arial, sans-serif;
-	letter-spacing: -1px;
-	font-weight: 700;
-	padding: 10px;
-	display: block;
-	overflow: hidden;
-	width: 20px;
-}
-span.goalAmount {
-	display: none;
-	text-indent: -9999px;
+/* mobile */
+@media only screen and (max-width: 960px) {
+		.goalProgress {
+			background: #f7f7f7;
+			padding: 5px;
+		}
+		div.progressBar {
+			background: #ff008c;
+			color: #fff;
+			font-size: 1.5em;
+			font-family: 'helvetica neue', helvetica, arial, sans-serif;
+			letter-spacing: -1px;
+			font-weight: 700;
+			padding: 10px;
+			display: block;
+			overflow: hidden;
+			width: 20px;
+		}
+		span.goalAmount {
+			display: none;
+			text-indent: -9999px;
+		}
+
+		body {
+				margin: auto;
+		    width: 100%;
+		}
+
+		h1 {
+			font-family:impact;
+		}
+
+		.parent {
+		  display: flex;
+		  align-items: flex-start;
+		  flex-wrap: wrap;
+		  height: 100%;
+		}
+		.child {
+		  width: 40%;
+		}
+
+		#story {
+			background-color: yellow;
+		}
+
+		.option1 {
+			border-radius: 25px;
+		  background-color: #87CEEB;
+		  background-position: left top;
+		  background-repeat: repeat;
+		  padding: 20px;
+		  width: 200px;
+		  height: 50px;
+		}
+
+		.option2 {
+			border-radius: 25px;
+		  background-color: #98FB98;
+		  background-position: left top;
+		  background-repeat: repeat;
+		  padding: 20px;
+		  width: 200px;
+		  height: 150px;
+		}
+
+		.option3 {
+			border-radius: 25px;
+		  background-color: #FFFACD;
+		  background-position: left top;
+		  background-repeat: repeat;
+		  padding: 20px;
+		  width: 200px;
+		  height: 150px;
+		}
+
+		.option4 {
+			border-radius: 25px;
+		  background-color: #FFC0CB;
+		  background-position: left top;
+		  background-repeat: repeat;
+		  padding: 20px;
+		  width: 200px;
+		  height: 150px;
+		}
 }
 
-.container {
-		margin: auto;
-    width: 50%;
-}
+/* desktop */
+@media only screen and (min-width: 961px) {
+		body {
+				margin: auto;
+				width: 50%;
+		}
 
-h1 {
-	font-family:impact;
-}
+		h1.a {
+			font-family:impact;
+			text-align: center;
+		}
 
-.parent {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  height: 100%;
-}
-.child {
-  width: 40%;
-}
+		p.a {
+			margin-bottom: 0;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-weight: 200;
+			color: #ff008c;
+			margin-left: 66px;
+		}
 
-.story {
-	background-color: yellow;
-}
+		.goalProgress {
+			background: #f7f7f7;
+			padding: 5px;
+			border: 1px solid black;
+			width: 80%;
+			margin-left: 66px;
+			margin-right: 66px;
+		}
+		div.progressBar {
+			background: #ff008c;
+			color: #fff;
+			font-size: 1.5em;
+			font-family: 'helvetica neue', helvetica, arial, sans-serif;
+			letter-spacing: -1px;
+			font-weight: 700;
+			padding: 10px;
+			display: block;
+			overflow: hidden;
+			width: 70px;
+		}
+		span.goalAmount {
+			display: none;
+			text-indent: -9999px;
+		}
 
-.option1 {
-	border-radius: 25px;
-  background-color: #87CEEB;
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 10px;
-  width: 200px;
-  height: 50px;
-}
+		#story {
+			background-color: #f7f7f7;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding: 20px;
+			border:10px groove;
+			font-size: large;
+		}
 
-.option2 {
-	border-radius: 25px;
-  background-color: #98FB98;
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
-}
+		.parent {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			height: 100%;
+		}
+		.child {
+			width: 40%;
+		}
 
-.option3 {
-	border-radius: 25px;
-  background-color: #FFFACD;
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
-}
+		.option1 {
+			border-radius: 25px;
+			background-color: #87CEEB;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
 
-.option4 {
-	border-radius: 25px;
-  background-color: #FFC0CB;
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
+		.option2 {
+			border-radius: 25px;
+			background-color: #98FB98;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+
+		.option3 {
+			border-radius: 25px;
+			background-color: #FFFACD;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
+
+		.option4 {
+			border-radius: 25px;
+			background-color: #FFC0CB;
+			background-position: left top;
+			background-repeat: repeat;
+			padding: 20px;
+			width: 200px;
+			height: 150px;
+		}
 }

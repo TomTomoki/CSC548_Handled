@@ -19,7 +19,26 @@ span.goalAmount {
 	text-indent: -9999px;
 }
 
-div#story {
+.container {
+		margin: auto;
+    width: 50%;
+}
+
+h1 {
+	font-family:impact;
+}
+
+.parent {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.child {
+  width: 40%;
+}
+
+.story {
 	background-color: yellow;
 }
 
@@ -28,9 +47,9 @@ div#story {
   background-color: #87CEEB;
   background-position: left top;
   background-repeat: repeat;
-  padding: 20px;
+  padding: 10px;
   width: 200px;
-  height: 150px;
+  height: 50px;
 }
 
 .option2 {

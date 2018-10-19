@@ -1,8 +1,7 @@
 //To do
-//1. Check Data. Is this what we use?
-//2. Discuss Design. (Background/color/Arrow?)
-//3. Shared design part. (Switch our games/Contact...?)
-//4. Use callbacks when ending the game
+//1. Shared design part. (Switch our games/Contact...?)
+//2. Use callbacks when ending the game
+//3. Handle touches too on mobile devices
 
 (function($){
   $(document).ready(function(){
@@ -17,9 +16,11 @@
           var firstTrial = true;
           var currentStress = 0;
           var currentStoryIndex = 1;
-      }
 
-      sessionStorage.setItem("firstTrial", false);
+          sessionStorage.setItem("firstTrial", false);
+          sessionStorage.setItem("stress", currentStress);
+          sessionStorage.setItem("index", currentStoryIndex);
+      }
 
 //Use filereader API to read these stories from the story file?
       if(firstTrial){
@@ -70,6 +71,7 @@
       $("#option4")[0].textContent = stories[currentStoryIndex].options[3].option;
 
 
+//Append events
       $('#sample_goal').goalProgress({
           currentAmount: currentStress,}, first_PageLoaded
       );

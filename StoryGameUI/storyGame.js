@@ -25,7 +25,7 @@
 //Use filereader API to read these stories from the story file?
       if(firstTrial){
           var stories = [];
-          
+
           var option1_1 = new Option("Hunker down and study for the upcoming onslaught of exams.", 8);
           var option1_2 = new Option("Set a schedule for yourself: Study and attend to extracurricular duties on the weekdays, and have fun on the weekends.", 5);
           var option1_3 = new Option("Consider dropping the volunteer project as it may be too difficult to do it all.", 2);
@@ -117,14 +117,14 @@
           stories[2] = story2;
           stories[3] = story3;
           stories[4] = story4;
-          stories[5] = story1;
-          stories[6] = story2;
-          stories[7] = story3;
-          stories[8] = story4;
-          stories[9] = story1;
-          stories[10] = story2;
-          stories[11] = story3;
-          stories[12] = story4;
+          stories[5] = story5;
+          stories[6] = story6;
+          stories[7] = story7;
+          stories[8] = story8;
+          stories[9] = story9;
+          stories[10] = story10;
+          stories[11] = story11;
+          stories[12] = story12;
 
           sessionStorage.setItem("stories", JSON.stringify(stories));
       }
@@ -149,9 +149,9 @@
 
       $('#option1').on("click", function(event){
           if(currentStress+stories[currentStoryIndex].options[0].point >= 0){
-              currentStress += stories[currentStoryIndex].options[0].point;
+              currentStress = Math.round(currentStress + stories[currentStoryIndex].options[0].point);
               $('#sample_goal').goalProgress({
-                  currentAmount: currentStress
+                  currentAmount: parseInt(currentStress)
               });
           } else {
             currentStress = 0;
@@ -166,9 +166,9 @@
 
       $('#option2').on("click", function(event){
           if(currentStress+stories[currentStoryIndex].options[1].point >= 0){
-              currentStress += stories[currentStoryIndex].options[1].point;
+              currentStress = Math.round(currentStress + stories[currentStoryIndex].options[1].point);
               $('#sample_goal').goalProgress({
-                  currentAmount: currentStress
+                  currentAmount: parseInt(currentStress)
               });
           } else {
             currentStress = 0;
@@ -183,9 +183,9 @@
 
       $('#option3').on("click", function(event){
           if(currentStress+stories[currentStoryIndex].options[2].point >= 0){
-              currentStress += stories[currentStoryIndex].options[2].point;
+              currentStress = Math.round(currentStress + stories[currentStoryIndex].options[2].point);
               $('#sample_goal').goalProgress({
-                  currentAmount: currentStress
+                  currentAmount: parseInt(currentStress)
               });
           } else {
             currentStress = 0;
@@ -200,9 +200,9 @@
 
       $('#option4').on("click", function(event){
           if(currentStress+stories[currentStoryIndex].options[3].point >= 0){
-              currentStress += stories[currentStoryIndex].options[3].point;
+              currentStress = Math.round(currentStress + stories[currentStoryIndex].options[3].point);
               $('#sample_goal').goalProgress({
-                  currentAmount: currentStress
+                  currentAmount: parseInt(currentStress)
               });
           } else {
             currentStress = 0;

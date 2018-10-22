@@ -31,7 +31,8 @@
 				var currentAmountParsed = parseInt(defaults.currentAmount);
 
 				// Calculate size of the progress bar
-				var percentage = (currentAmountParsed / goalAmountParsed) * 100;
+				var percentage = currentAmountParsed;
+				// var percentage = (currentAmountParsed / goalAmountParsed) * 100;
 
 				// Append to the target
 				if(first){

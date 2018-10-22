@@ -9,7 +9,7 @@
 			border: 1px solid black;
 			padding: 1px;
 
-			background-image: url("image.jpeg");
+			background-image: url("image.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -20,7 +20,7 @@
 			font-family:impact;
 			text-align: center;
 			margin: 0;
-			color: green;
+			color: #00BFFF;
 			text-shadow: 2px 2px black;
 		}
 
@@ -34,8 +34,7 @@
 			margin-bottom: 0;
 			font-family: "Comic Sans MS", cursive, sans-serif;
 			font-weight: 200;
-			color: #201d1f;
-			text-shadow: 2px 2px white;
+			color: white;
 		}
 
 		.goalProgress {
@@ -45,8 +44,8 @@
 			width: 100%;
 		}
 		div.progressBar {
-			background: #ff008c;
-			color: #fff;
+			background: red;
+			color: black;
 			font-size: 1.5em;
 			font-family: 'helvetica neue', helvetica, arial, sans-serif;
 			letter-spacing: -1px;
@@ -77,7 +76,7 @@
 		}
 		.child {
 			width: 90%;
-			/* height: 125px; */
+			background-color: #87CEFA;
 			padding: 10px;
 			border: 1px solid black;
 			margin: auto;
@@ -87,7 +86,6 @@
 
 		.option1 {
 			border-radius: 25px;
-			background-color: #87CEEB;
 			background-position: left top;
 			background-repeat: repeat;
 			margin-bottom:0px;
@@ -95,7 +93,6 @@
 
 		.option2 {
 			border-radius: 25px;
-			background-color: #98FB98;
 			background-position: left top;
 			background-repeat: repeat;
 			margin-bottom:0px;
@@ -103,14 +100,12 @@
 
 		.option3 {
 			border-radius: 25px;
-			background-color: #FFFACD;
 			background-position: left top;
 			background-repeat: repeat;
 		}
 
 		.option4 {
 			border-radius: 25px;
-			background-color: #FFC0CB;
 			background-position: left top;
 			background-repeat: repeat;
 		}
@@ -120,10 +115,10 @@
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			appearance: none;
-			background-color: #ffffff;
-			border: 2px solid #e74c3c;
+			background-color: white;
+			border: 2px solid #00BFFF;
 			border-radius: 0;
-			color: #e74c3c;
+			color: blue;
 			cursor: pointer;
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -152,7 +147,7 @@
 			transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 		}
 		.first:hover {
-			box-shadow: 0 0 40px 40px #e74c3c inset;
+			box-shadow: 0 0 40px 40px #00BFFF inset;
 		}
 
 		#endMessage {
@@ -175,7 +170,7 @@
 			border: 1px solid black;
 			padding: 1px;
 
-			background-image: url("image.jpeg");
+			background-image: url("image.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -186,7 +181,7 @@
 			font-family:impact;
 			text-align: center;
 			margin: 0;
-			color: green;
+			color: #00BFFF;
 			text-shadow: 2px 2px black;
 		}
 
@@ -200,8 +195,7 @@
 			margin-bottom: 0;
 			font-family: "Comic Sans MS", cursive, sans-serif;
 			font-weight: 200;
-			color: #201d1f;
-			text-shadow: 2px 2px white;
+			color: white;
 		}
 
 		.goalProgress {
@@ -211,8 +205,8 @@
 			width: 100%;
 		}
 		div.progressBar {
-			background: #ff008c;
-			color: #fff;
+			background: red;
+			color: black;
 			font-size: 1.5em;
 			font-family: 'helvetica neue', helvetica, arial, sans-serif;
 			letter-spacing: -1px;
@@ -243,7 +237,7 @@
 		}
 		.child {
 			width: 44%;
-			/* height: 125px; */
+			background-color: #87CEFA;
 			padding: 10px;
 			border: 1px solid black;
 			margin: auto;
@@ -253,7 +247,6 @@
 
 		.option1 {
 			border-radius: 25px;
-			background-color: #87CEEB;
 			background-position: left top;
 			background-repeat: repeat;
 			margin-bottom:0px;
@@ -261,7 +254,6 @@
 
 		.option2 {
 			border-radius: 25px;
-			background-color: #98FB98;
 			background-position: left top;
 			background-repeat: repeat;
 			margin-bottom:0px;
@@ -269,14 +261,12 @@
 
 		.option3 {
 			border-radius: 25px;
-			background-color: #FFFACD;
 			background-position: left top;
 			background-repeat: repeat;
 		}
 
 		.option4 {
 			border-radius: 25px;
-			background-color: #FFC0CB;
 			background-position: left top;
 			background-repeat: repeat;
 		}
@@ -286,10 +276,10 @@
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			appearance: none;
-			background-color: #ffffff;
-			border: 2px solid #e74c3c;
+			background-color: white;
+			border: 2px solid #00BFFF;
 			border-radius: 0;
-			color: #e74c3c;
+			color: blue;
 			cursor: pointer;
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -319,7 +309,7 @@
 			transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 		}
 		.first:hover {
-			box-shadow: 0 0 40px 40px #e74c3c inset;
+			box-shadow: 0 0 40px 40px #00BFFF inset;
 		}
 
 		#endMessage {
@@ -343,7 +333,7 @@
 			border: 1px solid black;
 			padding: 1px;
 
-			background-image: url("image.jpeg");
+			background-image: url("image.png");
 			background-size: cover;
 	    background-repeat: no-repeat;
 	    background-position: center center;
@@ -354,7 +344,7 @@
 			font-family:impact;
 			text-align: center;
 			margin: 0;
-			color: green;
+			color: #00BFFF;
 			text-shadow: 2px 2px black;
 		}
 
@@ -368,8 +358,7 @@
 			margin-bottom: 0;
 			font-family: "Comic Sans MS", cursive, sans-serif;
 			font-weight: 200;
-			color: #201d1f;
-			text-shadow: 2px 2px white;
+			color: white;
 		}
 
 		.goalProgress {
@@ -379,8 +368,8 @@
 			width: 100%;
 		}
 		div.progressBar {
-			background: #ff008c;
-			color: #fff;
+			background: red;
+			color: black;
 			font-size: 1.5em;
 			font-family: 'helvetica neue', helvetica, arial, sans-serif;
 			letter-spacing: -1px;
@@ -415,11 +404,11 @@
 			padding: 20px;
 			border: 1px solid black;
 			margin: auto;
+			background-color: #87CEFA;
 		}
 
 		.option1 {
 			border-radius: 25px;
-			background-color: #87CEEB;
 			background-position: left top;
 			background-repeat: repeat;
 			margin-bottom:10px;
@@ -427,7 +416,6 @@
 
 		.option2 {
 			border-radius: 25px;
-			background-color: #98FB98;
 			background-position: left top;
 			background-repeat: repeat;
 			margin-bottom:10px;
@@ -435,14 +423,12 @@
 
 		.option3 {
 			border-radius: 25px;
-			background-color: #FFFACD;
 			background-position: left top;
 			background-repeat: repeat;
 		}
 
 		.option4 {
 			border-radius: 25px;
-			background-color: #FFC0CB;
 			background-position: left top;
 			background-repeat: repeat;
 		}
@@ -452,10 +438,10 @@
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
 	    appearance: none;
-	    background-color: #ffffff;
-	    border: 2px solid #e74c3c;
+			background-color: white;
+	    border: 2px solid #00BFFF;
 	    border-radius: 0;
-	    color: #e74c3c;
+	    color: blue;
 	    cursor: pointer;
 	    display: -webkit-box;
 	    display: -ms-flexbox;
@@ -485,7 +471,7 @@
 		  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 		}
 		.first:hover {
-		  box-shadow: 0 0 40px 40px #e74c3c inset;
+		  box-shadow: 0 0 40px 40px #00BFFF inset;
 		}
 
 		#endMessage {

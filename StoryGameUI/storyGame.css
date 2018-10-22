@@ -1,95 +1,8 @@
 /* mobile */
-@media only screen and (max-width: 960px) {
-		.goalProgress {
-			background: #f7f7f7;
-			padding: 5px;
-		}
-		div.progressBar {
-			background: #ff008c;
-			color: #fff;
-			font-size: 1.5em;
-			font-family: 'helvetica neue', helvetica, arial, sans-serif;
-			letter-spacing: -1px;
-			font-weight: 700;
-			padding: 10px;
-			display: block;
-			overflow: hidden;
-			width: 20px;
-		}
-		span.goalAmount {
-			display: none;
-			text-indent: -9999px;
-		}
-
-		body {
-				margin: auto;
-		    width: 100%;
-		}
-
-		h1 {
-			font-family:impact;
-		}
-
-		.parent {
-		  display: flex;
-		  align-items: flex-start;
-		  flex-wrap: wrap;
-		  height: 100%;
-		}
-		.child {
-		  width: 40%;
-		}
-
-		#story {
-			background-color: yellow;
-		}
-
-		.option1 {
-			border-radius: 25px;
-		  background-color: #87CEEB;
-		  background-position: left top;
-		  background-repeat: repeat;
-		  padding: 20px;
-		  width: 200px;
-		  height: 50px;
-		}
-
-		.option2 {
-			border-radius: 25px;
-		  background-color: #98FB98;
-		  background-position: left top;
-		  background-repeat: repeat;
-		  padding: 20px;
-		  width: 200px;
-		  height: 150px;
-		}
-
-		.option3 {
-			border-radius: 25px;
-		  background-color: #FFFACD;
-		  background-position: left top;
-		  background-repeat: repeat;
-		  padding: 20px;
-		  width: 200px;
-		  height: 150px;
-		}
-
-		.option4 {
-			border-radius: 25px;
-		  background-color: #FFC0CB;
-		  background-position: left top;
-		  background-repeat: repeat;
-		  padding: 20px;
-		  width: 200px;
-		  height: 150px;
-		}
-}
-
-/* desktop */
-@media only screen and (min-width: 961px) {
+@media only screen and (max-width: 370px){
 		body {
 			margin: auto;
-			width: 50%;
+			width: 370px;
 		}
 
 		.outside {
@@ -97,9 +10,9 @@
 			padding: 1px;
 
 			background-image: url("image.jpeg");
-			background-size:     cover;                      /* <------ */
-	    background-repeat:   no-repeat;
-	    background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
 			/* opacity: 0.6; */
 		}
 
@@ -108,6 +21,7 @@
 			text-align: center;
 			margin: 0;
 			color: green;
+			text-shadow: 2px 2px black;
 		}
 
 		.bar {
@@ -121,6 +35,341 @@
 			font-family: "Comic Sans MS", cursive, sans-serif;
 			font-weight: 200;
 			color: #201d1f;
+			text-shadow: 2px 2px white;
+		}
+
+		.goalProgress {
+			background: #f7f7f7;
+			padding: 1px;
+			border: 1px solid black;
+			width: 100%;
+		}
+		div.progressBar {
+			background: #ff008c;
+			color: #fff;
+			font-size: 1.5em;
+			font-family: 'helvetica neue', helvetica, arial, sans-serif;
+			letter-spacing: -1px;
+			font-weight: 700;
+			padding: 10px;
+			display: block;
+			overflow: hidden;
+			width: 70px;
+		}
+		span.goalAmount {
+			display: none;
+			text-indent: -9999px;
+		}
+
+		#story {
+			background-color: #f7f7f7;
+			margin-top: 0;
+			padding: 3px;
+			border:5px groove;
+			font-size: large;
+		}
+
+		.parent {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			height: 100%;
+		}
+		.child {
+			width: 90%;
+			/* height: 125px; */
+			padding: 10px;
+			border: 1px solid black;
+			margin: auto;
+			margin-top: 0;
+			font-size: medium;
+		}
+
+		.option1 {
+			border-radius: 25px;
+			background-color: #87CEEB;
+			background-position: left top;
+			background-repeat: repeat;
+			margin-bottom:0px;
+		}
+
+		.option2 {
+			border-radius: 25px;
+			background-color: #98FB98;
+			background-position: left top;
+			background-repeat: repeat;
+			margin-bottom:0px;
+		}
+
+		.option3 {
+			border-radius: 25px;
+			background-color: #FFFACD;
+			background-position: left top;
+			background-repeat: repeat;
+		}
+
+		.option4 {
+			border-radius: 25px;
+			background-color: #FFC0CB;
+			background-position: left top;
+			background-repeat: repeat;
+		}
+
+		.btn {
+			box-sizing: border-box;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background-color: #ffffff;
+			border: 2px solid #e74c3c;
+			border-radius: 0;
+			color: #e74c3c;
+			cursor: pointer;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-item-align: center;
+			align-self: center;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1;
+			margin: 20px;
+			padding: 1.2em 1.8em;
+			text-decoration: none;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+		}
+
+		.btn:hover, .btn:focus {
+			color: #fff;
+			outline: 0;
+		}
+
+		.first {
+			-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+			transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+		}
+		.first:hover {
+			box-shadow: 0 0 40px 40px #e74c3c inset;
+		}
+
+		#endMessage {
+			padding: 10px;
+
+			background-color: #f7f7f7;
+			border:10px groove;
+			font-size: large;
+		}
+}
+
+/* mobile */
+@media only screen and (min-width: 371px) and (max-width: 502px) {
+		body {
+			margin: auto;
+			width: 100%;
+		}
+
+		.outside {
+			border: 1px solid black;
+			padding: 1px;
+
+			background-image: url("image.jpeg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			/* opacity: 0.6; */
+		}
+
+		h1.a {
+			font-family:impact;
+			text-align: center;
+			margin: 0;
+			color: green;
+			text-shadow: 2px 2px black;
+		}
+
+		.bar {
+			margin-left: 10%;
+			width: 80%;
+		}
+
+		p.a {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-weight: 200;
+			color: #201d1f;
+			text-shadow: 2px 2px white;
+		}
+
+		.goalProgress {
+			background: #f7f7f7;
+			padding: 1px;
+			border: 1px solid black;
+			width: 100%;
+		}
+		div.progressBar {
+			background: #ff008c;
+			color: #fff;
+			font-size: 1.5em;
+			font-family: 'helvetica neue', helvetica, arial, sans-serif;
+			letter-spacing: -1px;
+			font-weight: 700;
+			padding: 10px;
+			display: block;
+			overflow: hidden;
+			width: 70px;
+		}
+		span.goalAmount {
+			display: none;
+			text-indent: -9999px;
+		}
+
+		#story {
+			background-color: #f7f7f7;
+			margin-top: 0;
+			padding: 3px;
+			border:5px groove;
+			font-size: large;
+		}
+
+		.parent {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			height: 100%;
+		}
+		.child {
+			width: 44%;
+			/* height: 125px; */
+			padding: 10px;
+			border: 1px solid black;
+			margin: auto;
+			margin-top: 0;
+			font-size: medium;
+		}
+
+		.option1 {
+			border-radius: 25px;
+			background-color: #87CEEB;
+			background-position: left top;
+			background-repeat: repeat;
+			margin-bottom:0px;
+		}
+
+		.option2 {
+			border-radius: 25px;
+			background-color: #98FB98;
+			background-position: left top;
+			background-repeat: repeat;
+			margin-bottom:0px;
+		}
+
+		.option3 {
+			border-radius: 25px;
+			background-color: #FFFACD;
+			background-position: left top;
+			background-repeat: repeat;
+		}
+
+		.option4 {
+			border-radius: 25px;
+			background-color: #FFC0CB;
+			background-position: left top;
+			background-repeat: repeat;
+		}
+
+		.btn {
+			box-sizing: border-box;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background-color: #ffffff;
+			border: 2px solid #e74c3c;
+			border-radius: 0;
+			color: #e74c3c;
+			cursor: pointer;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-item-align: center;
+			align-self: center;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1;
+			margin: 20px;
+			margin-left: 60%;
+			padding: 1.2em 1.8em;
+			text-decoration: none;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+		}
+
+		.btn:hover, .btn:focus {
+			color: #fff;
+			outline: 0;
+		}
+
+		.first {
+			-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+			transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+		}
+		.first:hover {
+			box-shadow: 0 0 40px 40px #e74c3c inset;
+		}
+
+		#endMessage {
+			padding: 10px;
+
+			background-color: #f7f7f7;
+			border:10px groove;
+			font-size: large;
+		}
+}
+
+/* desktop */
+@media only screen and (min-width: 503px) {
+/* @media only screen and (min-width: 961px) { */
+		body {
+			margin: auto;
+			width: 503px;
+		}
+
+		.outside {
+			border: 1px solid black;
+			padding: 1px;
+
+			background-image: url("image.jpeg");
+			background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+			/* opacity: 0.6; */
+		}
+
+		h1.a {
+			font-family:impact;
+			text-align: center;
+			margin: 0;
+			color: green;
+			text-shadow: 2px 2px black;
+		}
+
+		.bar {
+			margin-left: 10%;
+			width: 80%;
+		}
+
+		p.a {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-weight: 200;
+			color: #201d1f;
+			text-shadow: 2px 2px white;
 		}
 
 		.goalProgress {
@@ -165,7 +414,7 @@
 			height: 125px;
 			padding: 20px;
 			border: 1px solid black;
-			margin-left:15px;
+			margin: auto;
 		}
 
 		.option1 {

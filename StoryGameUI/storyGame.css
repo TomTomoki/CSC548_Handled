@@ -1,8 +1,9 @@
 /* mobile */
-@media only screen and (max-width: 370px){
+/* @media only screen and (max-width: 370px){ */
+@media only screen and (max-width: 509px){
 		body {
 			margin: auto;
-			width: 370px;
+			width: 509px;
 		}
 
 		.outside {
@@ -160,13 +161,15 @@
 }
 
 /* mobile */
-@media only screen and (min-width: 371px) and (max-width: 502px) {
+/* @media only screen and (min-width: 371px) and (max-width: 502px) { */
+@media only screen and (min-width: 510px) and (max-width: 980px) {
 		body {
 			margin: auto;
-			width: 100%;
+			height: 100vh;
 		}
 
 		.outside {
+			height: 100%;
 			border: 1px solid black;
 			padding: 1px;
 
@@ -177,10 +180,14 @@
 			/* opacity: 0.6; */
 		}
 
-		h1.a {
-			font-family:impact;
+		div.a {
+			height: 6vh;
 			text-align: center;
-			margin: 0;
+		}
+
+		h1.a {
+			font-size: 5vh;
+			font-family:impact;
 			color: #00BFFF;
 			text-shadow: 2px 2px black;
 		}
@@ -188,14 +195,16 @@
 		.bar {
 			margin-left: 10%;
 			width: 80%;
+			margin-bottom: 3vh;
 		}
 
 		p.a {
-			margin-top: 0;
+			margin-top: 1vh;
 			margin-bottom: 0;
 			font-family: "Comic Sans MS", cursive, sans-serif;
 			font-weight: 200;
 			color: white;
+			font-size: 2.5vh;
 		}
 
 		.goalProgress {
@@ -203,18 +212,18 @@
 			padding: 1px;
 			border: 1px solid black;
 			width: 100%;
+			height: 6vh;
 		}
 		div.progressBar {
 			background: red;
 			color: black;
-			font-size: 1.5em;
+			font-size: 4vh;
 			font-family: 'helvetica neue', helvetica, arial, sans-serif;
 			letter-spacing: -1px;
-			font-weight: 700;
-			padding: 10px;
+    	padding-left: 10px;
 			display: block;
 			overflow: hidden;
-			width: 70px;
+			height: 6vh;
 		}
 		span.goalAmount {
 			display: none;
@@ -224,9 +233,10 @@
 		#story {
 			background-color: #f7f7f7;
 			margin-top: 0;
-			padding: 3px;
-			border:5px groove;
-			font-size: large;
+			padding: 0.5vh;
+			border:1vh groove;
+			font-size: 2.5vh;
+			margin-bottom: 2vh;
 		}
 
 		.parent {
@@ -237,12 +247,13 @@
 		}
 		.child {
 			width: 44%;
+			height: 19vh;
 			background-color: #87CEFA;
 			padding: 10px;
 			border: 1px solid black;
 			margin: auto;
 			margin-top: 0;
-			font-size: medium;
+			font-size: 2.2vh;
 		}
 
 		.option1 {
@@ -263,12 +274,14 @@
 			border-radius: 25px;
 			background-position: left top;
 			background-repeat: repeat;
+			margin-top: 1vh;
 		}
 
 		.option4 {
 			border-radius: 25px;
 			background-position: left top;
 			background-repeat: repeat;
+			margin-top: 1vh;
 		}
 
 		.btn {
@@ -286,11 +299,11 @@
 			display: flex;
 			-ms-flex-item-align: center;
 			align-self: center;
-			font-size: 1rem;
+			font-size: 1.3vh;
 			font-weight: 400;
 			line-height: 1;
-			margin: 20px;
-			margin-left: 60%;
+			margin: 2vh;
+			margin-left: 65%;
 			padding: 1.2em 1.8em;
 			text-decoration: none;
 			text-align: center;
@@ -317,13 +330,13 @@
 
 			background-color: #f7f7f7;
 			border:10px groove;
-			font-size: large;
+			font-size: 1.78vh;
 		}
 }
 
 /* desktop */
-@media only screen and (min-width: 503px) {
-/* @media only screen and (min-width: 961px) { */
+/* @media only screen and (min-width: 503px) { */
+@media only screen and (min-width: 981px) {
 		body {
 			margin: auto;
 			width: 503px;
@@ -340,10 +353,14 @@
 			/* opacity: 0.6; */
 		}
 
-		h1.a {
-			font-family:impact;
+		div.a {
 			text-align: center;
 			margin: 0;
+		}
+
+		h1.a {
+			font-size: 30px;
+			font-family:impact;
 			color: #00BFFF;
 			text-shadow: 2px 2px black;
 		}

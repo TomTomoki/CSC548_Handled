@@ -54,7 +54,7 @@
           var option4_3 = new Option("Work with your project group and try to reschedule for a later or earlier time.", 3);
           var option4_4 = new Option("Skype in to the meeting so you can quickly make your points and go to the party afterwards.", 4);
           var options4 = [option4_1, option4_2, option4_3, option4_4];
-          var story4 = new Story("A very close friend that you’ve known since high school is having his 21st birthday part, but you have an important checkpoint meeting for your semester volunteer project on the same day.",
+          var story4 = new Story("A very close friend that you’ve known since high school is having his 21st birthday party, but you have an important checkpoint meeting for your semester volunteer project on the same day.",
                             options4);
           var option5_1 = new Option("Go anyway. Your grade is the most important, and it doesn’t matter if you vomit in class or infect your peers.", 8);
           var option5_2 = new Option("Email your professors and explain the situation. Is there anyway they can record the lectures or get a fellow student to take notes for you?", 4);
@@ -72,7 +72,7 @@
                             options6);
           var option7_1 = new Option("Tell your group members the situation, and fly back for the week to be with your dad and help around the house.", 9);
           var option7_2 = new Option("Focus on your education. Your dad is a tough guy and he’s already looking for new jobs.", 5);
-          var option7_3 = new Option("Ask you dad what he wants. Does he need you? Does he think you should come home or stay? Go from there.", 2);
+          var option7_3 = new Option("Ask your dad what he wants. Does he need you? Does he think you should come home or stay? Go from there.", 2);
           var option7_4 = new Option("This volunteer project is a nuisance! Quit and fly back home to spend time with dad and relax.", -5);
           var options7 = [option7_1, option7_2, option7_3, option7_4];
           var story7 = new Story("Midterms are over, but you are planning to stick around campus to continue your volunteer project. Yet, your dad just lost the job he’s had for 25 years. What do you do?",
@@ -82,14 +82,14 @@
           var option8_3 = new Option("Ask your supervisor for a deadline after Thanksgiving.", -3);
           var option8_4 = new Option("Deliver a subpar project. You can go back and polish up the holes after Thanksgiving break. You still have time before the final project is due.", 7);
           var options8 = [option8_1, option8_2, option8_3, option8_4];
-          var story8 = new Story("Fall break is over and the back half of the semester is well under way, but Thanksgiving is in less than a week! But your volunteer project partners are all flying home for thanksgiving right when a big milestone is due.",
+          var story8 = new Story("Fall break is over and the back half of the semester is well under way, but Thanksgiving is in less than a week! But your volunteer project partners are all flying home for Thanksgiving right when a big milestone is due.",
                             options8);
           var option9_1 = new Option("You’ll have to put in a lot of time at the campus library. Make sure to finish as much work as you can before you come home.", 9);
           var option9_2 = new Option("Move into your best friend’s place for a week and work off their wifi.", 5);
           var option9_3 = new Option("It doesn’t really matter. You don’t have any major assignments due or any exams until finals week. Use this as a natural time to relax and enjoy some quiet time reading a book.", -3);
           var option9_4 = new Option("There is this new internet cafe you’ve been wanting to try. It has gotten great reviews, and you can use this as an opportunity to explore new venues.", 2);
           var options9 = [option9_1, option9_2, option9_3, option9_4];
-          var story9 = new Story("You’ve just returned from your Thanksgiving at grandma’s, but come back to fact that your apartment’s internet is down. It will take them almost a week to fix it! What are you going to do?",
+          var story9 = new Story("You’ve just returned from your Thanksgiving at grandma’s, but come back to the fact that your apartment’s internet is down. It will take them almost a week to fix it! What are you going to do?",
                             options9);
           var option10_1 = new Option("Fight through the cold. You’ve been through this before. You need to go to your classes to get the final lectures.", 9);
           var option10_2 = new Option("Ask a friend who has a car for a ride so you don’t have to suffer in these dangerous conditions.", 2);
@@ -98,7 +98,7 @@
           var options10 = [option10_1, option10_2, option10_3, option10_4];
           var story10 = new Story("Winter has officially arrived and Omaha is hit with a massive snowstorm. Blistering winds, iced roads, and below freezing temperatures prevent you from walking to campus. Yet it’s dead week and classes are still in session.",
                             options10);
-          var option11_1 = new Option("Study together. You’ve known eachother since freshman year RSP, and she’s been a great friend to you.", 5);
+          var option11_1 = new Option("Study together. You’ve known each other since freshman year RSP, and she’s been a great friend to you.", 5);
           var option11_2 = new Option("Tell her to work with her professors. They seem to be very understanding people, and will most probably work with her so she can succeed in class.", 2);
           var option11_3 = new Option("Ignore her. You need to study and you can’t be dragged down by her endless questions.", 6);
           var option11_4 = new Option("Offer to tutor her during the evenings and try to get her to study by herself to see how much material she can retain. This way you can study by yourself, but also help her when you are free.", 8);
@@ -107,7 +107,7 @@
                             options11);
           var option12_1 = new Option("Spend all your time preparing for the presentation and studying.", 5);
           var option12_2 = new Option("It looks like your group members have pretty easy finals schedules. Make them put the presentation together so you can focus on studying for your exams.", 3);
-          var option12_3 = new Option("Ask you supervisor to push the final presentation to a dater after finals week. Sure, you’ll have to stay after finals, but you won’t have to worry about both simultaneously.", 5);
+          var option12_3 = new Option("Ask you supervisor to push the final presentation to a date after finals week. Sure, you’ll have to stay after finals, but you won’t have to worry about both simultaneously.", 5);
           var option12_4 = new Option("Ask your professors for earlier finals. You want to get everything out of the way so you can focus solely on the final presentation.", 8);
           var options12 = [option12_1, option12_2, option12_3, option12_4];
           var story12 = new Story("Finals week is here, but your semester long volunteer project presentation is also this week.",
